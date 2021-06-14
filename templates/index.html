@@ -1,0 +1,31 @@
+<!DOCTYPE html lang>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <title>Reggie Jones - Learning HTML</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
+</head>
+
+<body>
+    <main>
+    <img class="profile" src="{{ url_for('static', filename='profile.jpg') }}" alt="Reggie's Profile Picture">
+    <h1>I'm learning HTML and CSS!</h1>
+    <p>
+        Hello my name is Reggie. I'm learning about web development
+        starting with HTML and CSS.
+    </p>
+    <p>
+        With HTML and CSS, I can make all sorts of websites. HTML and CSS
+        are the most important languages to learn!
+
+
+    </p>
+    <p>This websites's code looks like this:</p>
+    <img class="code" src="{{ url_for('static', filename='carbon.png') }}" alt="The HTML code for this page">
+</main>
+
+</body>
+
