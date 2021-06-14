@@ -23,4 +23,4 @@ The construction of the website broken down into the parts below:
 
 ### Deployment Platform
 
-- [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/
+- [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
