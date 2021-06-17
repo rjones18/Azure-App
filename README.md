@@ -1,5 +1,5 @@
-# Python-HTML-CSS-Project
-In this project I created a simple webpage using Python, Flask framework, HTML, and CSS.
+# Azure App
+In this project I created a flask app using Python, Flask, HTML, and CSS. I deployed the app using Microsoft Azure App Services PAAS.
 
 Link to Website: https://reggieshtmlproject.azurewebsites.net
 
