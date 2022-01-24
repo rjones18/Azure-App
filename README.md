@@ -6,7 +6,9 @@ Link to Website: https://flaskapp200.azurewebsites.net
 
 ## Website Breakdown
 
-The construction of the website broken down into the parts below:
+The construction of the website broken down into the architecture below:
+
+![azapp](https://github.com/rjones18/Images/blob/main/azureapp2.png)
 
 ### Front-End
 
@@ -19,6 +21,10 @@ The construction of the website broken down into the parts below:
 - [Python](https://www.python.org/) 
 - [Flask (Python Framework)](https://flask.palletsprojects.com/en/1.1.x/)
 
+
+### CI/CD
+
+- [GitHub Actions](https://github.com/features/actions)
 
 
 ### Deployment Platform
