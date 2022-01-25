@@ -8,7 +8,7 @@ Link to Website: https://flaskapp200.azurewebsites.net
 
 The construction of the website broken down into the architecture below:
 
-![azapp](https://github.com/rjones18/Images/blob/main/azureapp2.png)
+![azapp](https://github.com/rjones18/Images/blob/main/Azure%20App%20Service.drawio.png)
 
 ### Front-End
 
