@@ -2,7 +2,7 @@
 
 In this project, I created a flask app using Python, Flask, HTML, and CSS. I deployed the app using Microsoft Azure App Services PAAS.
 
-Link to Website: https://flaskapp200.azurewebsites.net
+Link to Website: https://rj-test-flask-app.azurewebsites.net
 
 
 ## Website Breakdown
