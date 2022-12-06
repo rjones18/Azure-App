@@ -1,6 +1,6 @@
 # Azure Devops Flask App
 
-In this project, I created a flask app using Python, Flask, HTML, and CSS. I deployed the app using Microsoft Azure App Services PAAS.
+In this project, I created a flask app using Python, Flask, HTML, and CSS. I deployed the app onto Azure App Services using Azure Repos and Azure Pipeline within Azure DevOps.
 
 Link to Website: https://rj-test-flask-app.azurewebsites.net
 
