@@ -1,31 +1,36 @@
-<!DOCTYPE html lang>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <title>Reggie Jones - Learning HTML</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
-
-</head>
-
-<body>
-    <main>
-    <img class="profile" src="{{ url_for('static', filename='profile.jpg') }}" alt="Reggie's Profile Picture">
-    <h1>I'm learning HTML and CSS!</h1>
-    <p>
-        Hello my name is Reggie. I'm learning about web development
-        starting with HTML and CSS.
-    </p>
-    <p>
-        With HTML and CSS, I can make all sorts of websites. HTML and CSS
-        are the most important languages to learn!
-
-
-    </p>
-    <p>This websites's code looks like this:</p>
-    <img class="code" src="{{ url_for('static', filename='carbon.png') }}" alt="The HTML code for this page">
-</main>
-
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ThePulseReport</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-4">The Pulse Report</h1>
+            <h3 class="mb-4">Top Headlines</h3>
+            <ul class="list-unstyled">
+                {% for article in articles %}
+                    <li class="media mb-3 pb-3 border-bottom">
+                        <img src="{{ article.urlToImage }}" class="mr-3 img-thumbnail" alt="{{ article.title }}" style="max-width: 150px;">
+                        <div class="media-body">
+                            <a href="{{ article.url }}" target="_blank" class="text-decoration-none">
+                                <h5 class="mt-0 mb-1">{{ article.title }}</h5>
+                            </a>
+                            <button onclick="toggleSource(event, 'source-{{ loop.index }}')" class="btn btn-primary btn-sm">Toggle Source</button>
+                            <div id="source-{{ loop.index }}" class="slide-toggle" style="max-height: 0;">
+                                <p class="mt-2 mb-0">Source: {{ article.source.name }}</p>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+    </html>
