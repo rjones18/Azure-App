@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Flask App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include custom styles -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/styles.css') }}">
 </head>
 <body>
-    <h1>Hello from Flask!</h1>
-    <button id="clickme">Click me!</button>
-
-    <script src="{{ url_for('static', filename='/js/script.js') }}"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Blog</a>
+    </nav>
+    <div class="container">
+        <h1 class="my-4">Welcome to my blog</h1>
+        <!-- Blog Post -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Post Title</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor quam nec semper convallis...</p>
+                <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on January 1, 2023 by <a href="#">Admin</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='/js/scripts.js') }}"></script>
 </body>
 </html>
+
+
 
 

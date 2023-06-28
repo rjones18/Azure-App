@@ -1,5 +1,9 @@
-document.getElementById('clickme').addEventListener('click', function() {
-    alert('Button clicked!');
+document.querySelectorAll('.btn-primary').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('You clicked Read More!');
+    });
 });
+
 
   
