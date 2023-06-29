@@ -1,4 +1,4 @@
-# Azure-App-Service-Python-Blog-App
+# Azure-App-Service-Python-App
 
 In this project, I have adeptly utilized a suite of Azure services to engineer and deploy a blog website on Azure App Service. The website is built using Python, HTML, CSS, and JavaScript, and Azure App Service's serverless architecture allows us to host it without managing any infrastructure. For optimal content delivery and user experience, I integrated Azure's Content Delivery Network, which guarantees swift and reliable performance to users worldwide. The critical aspect of security has been addressed by tying Snyk with our Github repository, enabling continuous vulnerability scanning and security loophole detection.
 
