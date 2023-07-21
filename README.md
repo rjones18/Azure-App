@@ -4,12 +4,12 @@ In this project, I have adeptly utilized a suite of Azure services to engineer a
 
 To streamline and secure the deployment process, I leveraged Azure DevOps Pipelines and service principals. These automation tools not only accelerate the deployment process but also safeguard it by reducing human error and securely handling Azure authentication. Furthermore, to add a personal touch to our CDN, I utilized Azure DNS Zone. This facilitated retrieving DNS records directly from my existing Go Daddy DNS, providing our CDN with a custom domain name. The result is a secure, scalable, and efficient blog platform that is delivered fast to a global audience
 
-Link to Website: https://rjblogsite.azure.vsystems.online/
+Link to Website: https://rjblogsite.azure.vsystems.online/ (Not Currently Deployed)
 
 
 ## Website Breakdown
 
-The construction of the website broken down into the architecture below:
+The construction of the website is broken down into the architecture below:
 
 ![blog-website](https://github.com/rjones18/Images/blob/main/Azure%20App%20Blog%20Site.png)
 
